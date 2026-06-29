@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+nav{
+    background:#2d4aa5;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    margin-bottom:20px;
+    color:#2d4aa5;
+}
+
+.hero p{
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#2d4aa5;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:5px;
+}
+
+.about{
+    width:80%;
+    margin:auto;
+    padding:40px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    flex:1;
+    min-width:250px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#2d4aa5;
+    margin-bottom:10px;
+}
+
+.card button{
+    margin-top:15px;
+    padding:10px 15px;
+    background:#2d4aa5;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.dashboard-card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
