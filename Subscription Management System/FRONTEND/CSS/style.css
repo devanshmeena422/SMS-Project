@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:white;
+    color:black;
+}
+
+header{
+    background:black;
+    padding:20px 80px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+}
+
+nav ul li a:hover{
+    color:gray;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 80px;
+}
+
+.hero-content{
+    width:50%;
+}
+
+.hero-content h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.hero-content button{
+    background:blue;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.hero-content button:hover{
+    background:black;
+}
+
+.hero-image{
+    width:45%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+}
+
+.features{
+    padding:70px 80px;
+    text-align:center;
+}
+
+.features h2{
+    font-size:35px;
+    margin-bottom:40px;
+}
+
+.feature-container{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.feature-card{
+    background:white;
+    border:1px solid gray;
+    padding:25px;
+    width:25%;
+}
+
+.feature-card h3{
+    margin-bottom:15px;
+}
+
+.plans{
+    padding:70px 80px;
+    text-align:center;
+}
+
+.plans h2{
+    font-size:35px;
+    margin-bottom:40px;
+}
+
+.plan-container{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.plan-card{
+    width:30%;
+    border:1px solid gray;
+    padding:30px;
+}
+
+.plan-card h1{
+    margin:20px 0;
+}
+
+.plan-card button{
+    background:blue;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.plan-card button:hover{
+    background:black;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:20px;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-image{
+        width:100%;
+        margin-top:30px;
+    }
+
+    .feature-container{
+        flex-direction:column;
+    }
+
+    .feature-card{
+        width:100%;
+    }
+
+    .plan-container{
+        flex-direction:column;
+    }
+
+    .plan-card{
+        width:100%;
+    }
+}

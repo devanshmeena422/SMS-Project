@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Subscription Management System</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>Subscription Management System</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="dashboard">
+
+    <h1>My Profile</h1>
+
+    <div class="dashboard-container">
+
+        <div class="card">
+            <h3>Full Name</h3>
+            <p id="profileName"></p>
+        </div>
+
+        <div class="card">
+            <h3>Email</h3>
+            <p id="profileEmail"></p>
+        </div>
+
+        <div class="card">
+            <h3>Mobile Number</h3>
+            <p id="profileMobile"></p>
+        </div>
+
+        <div class="card">
+            <h3>Current Plan</h3>
+            <p id="profilePlan"></p>
+        </div>
+
+        <div class="card">
+            <h3>Subscription Status</h3>
+            <p>Active</p>
+        </div>
+
+        <div class="card">
+            <h3>Renewal</h3>
+            <p>30 Days Remaining</p>
+        </div>
+
+    </div>
+
+    <div class="button-box">
+
+        <button id="editProfile">Update Profile</button>
+
+        <button id="logout">Logout</button>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Subscription Management System</p>
+
+</footer>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>

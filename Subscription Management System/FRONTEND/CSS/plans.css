@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:white;
+    color:black;
+}
+
+header{
+    background:black;
+    padding:20px 60px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+nav ul li a:hover{
+    color:gray;
+}
+
+.heading{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.heading h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.heading p{
+    font-size:18px;
+}
+
+.plan-container{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.plan-card{
+    width:33%;
+    border:1px solid gray;
+    border-radius:8px;
+    padding:30px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.plan-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 10px gray;
+}
+
+.plan-card h2{
+    margin-bottom:20px;
+}
+
+.plan-card h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.plan-card p{
+    margin-bottom:20px;
+}
+
+.plan-card ul{
+    list-style:none;
+    margin-bottom:25px;
+}
+
+.plan-card ul li{
+    padding:8px;
+    border-bottom:1px solid lightgray;
+}
+
+.plan-card button{
+    background:blue;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+    border-radius:5px;
+    font-size:16px;
+}
+
+.plan-card button:hover{
+    background:black;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:900px){
+
+    .plan-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .plan-card{
+        width:90%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:15px;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .heading h1{
+        font-size:30px;
+    }
+
+}
