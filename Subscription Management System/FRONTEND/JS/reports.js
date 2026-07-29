@@ -1,14 +1,21 @@
 const downloadReport=document.getElementById("downloadReport");
+
 const adminPage=document.getElementById("adminPage");
 
-downloadReport.addEventListener("click",function(){
+downloadReport.onclick=function(){
 
-alert("Report Download Started");
+alert("Report Downloaded Successfully.");
 
-});
+};
 
-adminPage.addEventListener("click",function(){
+adminPage.onclick=function(){
 
 window.location.href="admin.html";
 
-});
+};
+
+window.onload=function(){
+
+console.log("Reports Page Loaded Successfully.");
+
+};
