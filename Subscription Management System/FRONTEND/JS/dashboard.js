@@ -4,12 +4,12 @@ let name=localStorage.getItem("userName");
 
 if(name){
 
-user.innerText="Welcome, "+name;
+user.innerHTML="Welcome, "+name;
 
 }
 
 else{
 
-user.innerText="Welcome, User";
+user.innerHTML="Welcome, User";
 
 }
