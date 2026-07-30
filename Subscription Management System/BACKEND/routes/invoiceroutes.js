@@ -2,7 +2,7 @@ const express=require("express");
 
 const router=express.Router();
 
-const invoiceController=require("../controllers/invoiceController");
+const invoiceController=require("../controllers/invoicecontroller");
 
 router.get("/",invoiceController.getInvoices);
 
