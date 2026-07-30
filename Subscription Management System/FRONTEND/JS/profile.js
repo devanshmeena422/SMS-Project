@@ -6,21 +6,28 @@ const profilePlan=document.getElementById("profilePlan");
 const editProfile=document.getElementById("editProfile");
 const logout=document.getElementById("logout");
 
-profileName.innerText=localStorage.getItem("userName") || "Guest User";
+profileName.innerHTML=localStorage.getItem("userName")||"Guest User";
 
-profileEmail.innerText=localStorage.getItem("userEmail") || "Not Available";
+profileEmail.innerHTML=localStorage.getItem("userEmail")||"Not Available";
 
-profileMobile.innerText=localStorage.getItem("userMobile") || "Not Available";
+profileMobile.innerHTML=localStorage.getItem("userMobile")||"+91 XXXXXXXXXX";
 
-profilePlan.innerText=localStorage.getItem("planName") || "No Plan Selected";
+profilePlan.innerHTML=localStorage.getItem("planName")||"Premium";
 
-editProfile.addEventListener("click",function(){
+editProfile.onclick=function(){
 
-    alert("Profile Update Feature will be added later.");
-});
-logout.addEventListener("click",function(){
-    localStorage.clear();
-    alert("Logout Successful");
-    window.location.href="login.html";
+alert("Profile Update Feature Coming Soon");
 
-});
+};
+
+logout.onclick=function(){
+
+if(confirm("Are you sure you want to logout?")){
+
+localStorage.clear();
+
+window.location.href="login.html";
+
+}
+
+};
