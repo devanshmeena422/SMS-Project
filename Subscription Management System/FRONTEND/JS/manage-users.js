@@ -13,7 +13,6 @@ edit.forEach(function(button){
 button.addEventListener("click",function(){
 
 alert("Edit User");
-
 });
 
 });
@@ -27,5 +26,4 @@ button.addEventListener("click",function(){
 alert("Delete User");
 
 });
-
 });
