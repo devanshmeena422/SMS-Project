@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Plans</title>
+<link rel="stylesheet" href="css/manage-plans.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<nav>
+<h2>Subscription Management System</h2>
+<ul>
+<li><a href="admin.html">Dashboard</a></li>
+<li><a href="manage-users.html">Users</a></li>
+<li><a href="manage-plans.html">Plans</a></li>
+<li><a href="manage-subscriptions.html">Subscriptions</a></li>
+<li><a href="manage-payments.html">Payments</a></li>
+<li><a href="reports.html">Reports</a></li>
+<li><a href="settings.html">Settings</a></li>
+<li><a href="login.html">Logout</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="plans">
+
+<h1>Manage Subscription Plans</h1>
+
+<div class="top">
+
+<input type="text" placeholder="Search Plan">
+
+<button id="addPlan">Add Plan</button>
+
+</div>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Plan Name</th>
+<th>Price</th>
+<th>Duration</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Basic</td>
+<td>₹299</td>
+<td>1 Month</td>
+<td>Available</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Standard</td>
+<td>₹599</td>
+<td>3 Months</td>
+<td>Available</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Premium</td>
+<td>₹999</td>
+<td>12 Months</td>
+<td>Available</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+</table>
+
+</section>
+
+<footer>
+
+<p>© 2026 Subscription Management System</p>
+
+</footer>
+
+<script src="js/manage-plans.js"></script>
+
+</body>
+</html>
