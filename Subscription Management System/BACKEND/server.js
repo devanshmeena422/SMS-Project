@@ -25,10 +25,14 @@ app.get("/",function(req,res){
 const userRoutes=require("./routes/userRoutes");
 const planRoutes=require("./routes/planRoutes");
 const subscriptionRoutes=require("./routes/subscriptionRoutes");
+const paymentRoutes=require("./routes/paymentRoutes");
+const invoiceRoutes=require("./routes/invoiceRoutes");
 
 app.use("/users",userRoutes);
 app.use("/plans",planRoutes);
 app.use("/subscriptions",subscriptionRoutes);
+app.use("/payments",paymentRoutes);
+app.use("/invoices",invoiceRoutes);
 
 const PORT=process.env.PORT || 5000;
 
