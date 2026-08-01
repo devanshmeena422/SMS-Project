@@ -1,77 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Subscription Management System</title>
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/dashboard.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <nav>
-        <h2>Subscription Management System</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="plans.html">Plans</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Logout</a></li>
-        </ul>
-    </nav>
+
+<nav>
+
+<h2>Subscription Management System</h2>
+
+<ul>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="plans.html">Plans</a></li>
+<li><a href="billing.html">Billing</a></li>
+<li><a href="invoice.html">Invoice</a></li>
+<li><a href="reports.html">Reports</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="logout.html">Logout</a></li>
+
+</ul>
+
+</nav>
+
 </header>
 
 <section class="dashboard">
 
-    <h1>Customer Dashboard</h1>
+<h1 id="welcomeUser">Welcome</h1>
 
-    <div class="dashboard-container">
+<div class="cards">
 
-        <div class="card">
-            <h3>Customer Name</h3>
-            <p id="userName">Guest User</p>
-        </div>
+<div class="card">
 
-        <div class="card">
-            <h3>Email</h3>
-            <p id="userEmail">guest@email.com</p>
-        </div>
+<h3>Current Plan</h3>
 
-        <div class="card">
-            <h3>Current Plan</h3>
-            <p id="planName">No Plan Selected</p>
-        </div>
+<h2>Premium</h2>
 
-        <div class="card">
-            <h3>Plan Price</h3>
-            <p id="planPrice">₹0</p>
-        </div>
+</div>
 
-        <div class="card">
-            <h3>Subscription Status</h3>
-            <p>Active</p>
-        </div>
+<div class="card">
 
-        <div class="card">
-            <h3>Remaining Days</h3>
-            <p>30 Days</p>
-        </div>
+<h3>Subscription Status</h3>
 
-    </div>
+<h2>Active</h2>
 
-    <div class="button-box">
+</div>
 
-        <button id="renewButton">Renew Subscription</button>
+<div class="card">
 
-        <button id="cancelButton">Cancel Subscription</button>
+<h3>Renewal Date</h3>
 
-    </div>
+<h2>15 Aug 2026</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Invoices</h3>
+
+<h2>3</h2>
+
+</div>
+
+</div>
+
+<div class="quick">
+
+<h2>Quick Actions</h2>
+
+<div class="buttons">
+
+<a href="plans.html">Upgrade Plan</a>
+
+<a href="billing.html">Billing</a>
+
+<a href="invoice.html">Invoices</a>
+
+<a href="profile.html">Profile</a>
+
+</div>
+
+</div>
+
+<div class="history">
+
+<h2>Recent Subscription Activity</h2>
+
+<table>
+
+<tr>
+
+<th>Date</th>
+
+<th>Activity</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>15 Jul 2026</td>
+
+<td>Premium Plan Activated</td>
+
+<td>Completed</td>
+
+</tr>
+
+<tr>
+
+<td>15 Jun 2026</td>
+
+<td>Invoice Generated</td>
+
+<td>Paid</td>
+
+</tr>
+
+<tr>
+
+<td>15 May 2026</td>
+
+<td>Subscription Renewed</td>
+
+<td>Completed</td>
+
+</tr>
+
+</table>
+
+</div>
 
 </section>
 
 <footer>
-    <p>© 2026 Subscription Management System</p>
+
+<p>© 2026 Subscription Management System</p>
+
 </footer>
 
 <script src="js/dashboard.js"></script>

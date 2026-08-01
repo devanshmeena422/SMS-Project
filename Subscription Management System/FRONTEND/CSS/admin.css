@@ -1,142 +1,236 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Poppins",sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
 }
 
 body{
-    background:white;
-    color:black;
+background:white;
+color:black;
 }
 
 header{
-    background:black;
-    padding:20px 60px;
+background:black;
+padding:20px 60px;
 }
 
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 nav h2{
-    color:white;
+color:white;
 }
 
 nav ul{
-    display:flex;
-    list-style:none;
+display:flex;
+list-style:none;
 }
 
 nav ul li{
-    margin-left:25px;
+margin-left:20px;
 }
 
 nav ul li a{
-    text-decoration:none;
-    color:white;
+text-decoration:none;
+color:white;
 }
 
 nav ul li a:hover{
-    color:gray;
+color:gray;
 }
 
 .admin{
-    width:90%;
-    margin:40px auto;
+width:90%;
+margin:40px auto;
 }
 
 .admin h1{
-    text-align:center;
-    margin-bottom:40px;
+text-align:center;
+margin-bottom:35px;
 }
 
-.admin-container{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-    margin-bottom:40px;
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-bottom:40px;
 }
 
-.admin-card{
-    border:1px solid gray;
-    border-radius:8px;
-    padding:25px;
-    text-align:center;
+.card{
+border:1px solid gray;
+border-radius:8px;
+padding:25px;
+text-align:center;
 }
 
-.admin-card h3{
-    margin-bottom:15px;
+.card h3{
+margin-bottom:15px;
 }
 
-.admin-card h2{
-    color:blue;
+.card h2{
+font-size:30px;
 }
 
-.table-section{
-    margin-top:40px;
+.admin h2{
+margin-bottom:20px;
 }
 
-.table-section h2{
-    margin-bottom:20px;
+.buttons{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-bottom:40px;
+}
+
+.buttons a{
+background:black;
+color:white;
+text-decoration:none;
+padding:15px;
+text-align:center;
+border-radius:5px;
+}
+
+.buttons a:hover{
+background:gray;
+}
+
+.tables{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-top:20px;
 }
 
 table{
-    width:100%;
-    border-collapse:collapse;
+width:100%;
+border-collapse:collapse;
 }
 
 table th{
-    background:black;
-    color:white;
-    padding:15px;
+background:black;
+color:white;
+padding:15px;
 }
 
 table td{
-    padding:15px;
-    text-align:center;
-    border:1px solid gray;
+border:1px solid gray;
+padding:15px;
+text-align:center;
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.top input{
+width:320px;
+padding:12px;
+border:1px solid gray;
+border-radius:5px;
+}
+
+.top button{
+background:black;
+color:white;
+border:none;
+padding:12px 20px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.top button:hover{
+background:gray;
+}
+
+.edit{
+background:green;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:5px;
+cursor:pointer;
+margin-right:10px;
+}
+
+.delete{
+background:red;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:5px;
+cursor:pointer;
 }
 
 footer{
-    background:black;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:50px;
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
 }
 
-@media(max-width:900px){
+@media(max-width:1000px){
 
-    .admin-container{
-        grid-template-columns:repeat(2,1fr);
-    }
+.cards{
+grid-template-columns:repeat(2,1fr);
+}
+
+.buttons{
+grid-template-columns:repeat(2,1fr);
+}
+
+.tables{
+grid-template-columns:1fr;
+}
 
 }
 
 @media(max-width:768px){
 
-    nav{
-        flex-direction:column;
-    }
+header{
+padding:20px;
+}
 
-    nav ul{
-        flex-direction:column;
-        margin-top:15px;
-    }
+nav{
+flex-direction:column;
+}
 
-    nav ul li{
-        margin:10px 0;
-    }
+nav ul{
+flex-direction:column;
+margin-top:20px;
+}
 
-    .admin-container{
-        grid-template-columns:1fr;
-    }
+nav ul li{
+margin:10px 0;
+}
 
-    table{
-        font-size:14px;
-    }
+.cards{
+grid-template-columns:1fr;
+}
+
+.buttons{
+grid-template-columns:1fr;
+}
+
+.top{
+flex-direction:column;
+}
+
+.top input{
+width:100%;
+margin-bottom:15px;
+}
+
+table{
+font-size:14px;
+}
 
 }

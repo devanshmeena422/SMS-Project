@@ -1,92 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="css/admin.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="css/admin.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <nav>
-        <h2>Subscription Management System</h2>
-        <ul>
-            <li><a href="admin.html">Dashboard</a></li>
-            <li><a href="plans.html">Plans</a></li>
-            <li><a href="dashboard.html">Customer</a></li>
-            <li><a href="login.html">Logout</a></li>
-        </ul>
-    </nav>
+
+<nav>
+
+<h2>Subscription Management System</h2>
+
+<ul>
+
+<li><a href="admin.html">Dashboard</a></li>
+<li><a href="manage-users.html">Users</a></li>
+<li><a href="manage-plans.html">Plans</a></li>
+<li><a href="manage-subscriptions.html">Subscriptions</a></li>
+<li><a href="manage-payments.html">Payments</a></li>
+<li><a href="reports.html">Reports</a></li>
+<li><a href="settings.html">Settings</a></li>
+<li><a href="login.html">Logout</a></li>
+
+</ul>
+
+</nav>
+
 </header>
 
 <section class="admin">
 
-    <h1>Admin Dashboard</h1>
+<h1>Admin Dashboard</h1>
 
-    <div class="admin-container">
+<div class="cards">
 
-        <div class="admin-card">
-            <h3>Total Customers</h3>
-            <h2>120</h2>
-        </div>
+<div class="card">
+<h3>Total Users</h3>
+<h2>320</h2>
+</div>
 
-        <div class="admin-card">
-            <h3>Active Plans</h3>
-            <h2>3</h2>
-        </div>
+<div class="card">
+<h3>Active Plans</h3>
+<h2>3</h2>
+</div>
 
-        <div class="admin-card">
-            <h3>Monthly Revenue</h3>
-            <h2>₹54,000</h2>
-        </div>
+<div class="card">
+<h3>Subscriptions</h3>
+<h2>275</h2>
+</div>
 
-        <div class="admin-card">
-            <h3>Expired Plans</h3>
-            <h2>18</h2>
-        </div>
+<div class="card">
+<h3>Revenue</h3>
+<h2>₹2,75,000</h2>
+</div>
 
-    </div>
+</div>
 
-    <div class="table-section">
+<h2>Quick Management</h2>
 
-        <h2>Recent Subscribers</h2>
+<div class="buttons">
 
-        <table>
+<a href="manage-users.html">Manage Users</a>
 
-            <tr>
-                <th>Name</th>
-                <th>Plan</th>
-                <th>Status</th>
-            </tr>
+<a href="manage-plans.html">Manage Plans</a>
 
-            <tr>
-                <td>Rahul Sharma</td>
-                <td>Premium</td>
-                <td>Active</td>
-            </tr>
+<a href="manage-subscriptions.html">Manage Subscriptions</a>
 
-            <tr>
-                <td>Priya Verma</td>
-                <td>Basic</td>
-                <td>Active</td>
-            </tr>
+<a href="manage-payments.html">Manage Payments</a>
 
-            <tr>
-                <td>Amit Patel</td>
-                <td>Standard</td>
-                <td>Expired</td>
-            </tr>
+<a href="reports.html">Reports</a>
 
-        </table>
+<a href="settings.html">Settings</a>
 
-    </div>
+</div>
+
+<div class="tables">
+
+<div>
+
+<h2>Recent Users</h2>
+
+<table>
+
+<tr>
+
+<th>Name</th>
+
+<th>Plan</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Rahul Sharma</td>
+
+<td>Premium</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>Priya Verma</td>
+
+<td>Standard</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>Amit Patel</td>
+
+<td>Basic</td>
+
+<td>Expired</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div>
+
+<h2>Recent Payments</h2>
+
+<table>
+
+<tr>
+
+<th>Invoice</th>
+
+<th>Amount</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>INV001</td>
+
+<td>₹999</td>
+
+<td>Paid</td>
+
+</tr>
+
+<tr>
+
+<td>INV002</td>
+
+<td>₹599</td>
+
+<td>Paid</td>
+
+</tr>
+
+<tr>
+
+<td>INV003</td>
+
+<td>₹299</td>
+
+<td>Pending</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
 
 </section>
 
 <footer>
-    <p>© 2026 Subscription Management System</p>
+
+<p>© 2026 Subscription Management System</p>
+
 </footer>
 
 <script src="js/admin.js"></script>
