@@ -28,6 +28,7 @@ const subscriptionRoutes=require("./routes/subscriptionRoutes");
 
 app.use("/users",userRoutes);
 app.use("/plans",planRoutes);
+app.use("/subscriptions",subscriptionRoutes);
 
 const PORT=process.env.PORT || 5000;
 
