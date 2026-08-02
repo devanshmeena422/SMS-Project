@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Billing | Subscription Management System</title>
+<link rel="stylesheet" href="css/billing.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<nav>
+<h2>Subscription Management System</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="plans.html">Plans</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="billing.html">Billing</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="admin.html">Admin</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Logout</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="billing">
+
+<h1>Billing Management</h1>
+
+<div class="summary">
+
+<div class="box">
+<h3>Current Plan</h3>
+<p id="planName">Premium</p>
+</div>
+
+<div class="box">
+<h3>Plan Price</h3>
+<p id="planPrice">₹999</p>
+</div>
+
+<div class="box">
+<h3>Next Billing Date</h3>
+<p>15 August 2026</p>
+</div>
+
+<div class="box">
+<h3>Payment Status</h3>
+<p>Paid</p>
+</div>
+
+</div>
+
+<h2>Billing History</h2>
+
+<table>
+
+<tr>
+<th>Invoice</th>
+<th>Date</th>
+<th>Amount</th>
+<th>Status</th>
+<th>Download</th>
+</tr>
+
+<tr>
+<td>INV001</td>
+<td>15 July 2026</td>
+<td>₹999</td>
+<td>Paid</td>
+<td><button class="downloadButton">Download</button></td>
+</tr>
+
+<tr>
+<td>INV002</td>
+<td>15 June 2026</td>
+<td>₹999</td>
+<td>Paid</td>
+<td><button class="downloadButton">Download</button></td>
+</tr>
+
+<tr>
+<td>INV003</td>
+<td>15 May 2026</td>
+<td>₹999</td>
+<td>Paid</td>
+<td><button class="downloadButton">Download</button></td>
+</tr>
+
+</table>
+
+<div class="buttons">
+
+<button id="payNow">Pay Now</button>
+
+<button id="dashboard">Dashboard</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Subscription Management System</p>
+
+</footer>
+
+<script src="js/billing.js"></script>
+
+</body>
+</html>
