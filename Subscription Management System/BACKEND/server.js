@@ -24,6 +24,7 @@ app.get("/",function(req,res){
 
 const userRoutes=require("./routes/userRoutes");
 const planRoutes=require("./routes/planRoutes");
+const subscriptionRoutes=require("./routes/subscriptionRoutes");
 
 app.use("/users",userRoutes);
 app.use("/plans",planRoutes);
