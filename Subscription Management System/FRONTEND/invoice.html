@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoices | Subscription Management System</title>
+<link rel="stylesheet" href="css/invoice.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<nav>
+<h2>Subscription Management System</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="plans.html">Plans</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="billing.html">Billing</a></li>
+<li><a href="invoice.html">Invoices</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="admin.html">Admin</a></li>
+<li><a href="login.html">Logout</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="invoice">
+
+<h1>Invoice History</h1>
+
+<table>
+
+<tr>
+<th>Invoice ID</th>
+<th>Plan</th>
+<th>Date</th>
+<th>Amount</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>INV001</td>
+<td>Premium</td>
+<td>15 July 2026</td>
+<td>₹999</td>
+<td>Paid</td>
+<td><button class="invoiceButton">Download</button></td>
+</tr>
+
+<tr>
+<td>INV002</td>
+<td>Standard</td>
+<td>15 June 2026</td>
+<td>₹599</td>
+<td>Paid</td>
+<td><button class="invoiceButton">Download</button></td>
+</tr>
+
+<tr>
+<td>INV003</td>
+<td>Basic</td>
+<td>15 May 2026</td>
+<td>₹299</td>
+<td>Paid</td>
+<td><button class="invoiceButton">Download</button></td>
+</tr>
+
+</table>
+
+<div class="buttons">
+
+<button id="billingPage">Billing</button>
+
+<button id="dashboardPage">Dashboard</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Subscription Management System</p>
+
+</footer>
+
+<script src="js/invoice.js"></script>
+
+</body>
+</html>
