@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings | Subscription Management System</title>
+<link rel="stylesheet" href="css/settings.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<nav>
+<h2>Subscription Management System</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="billing.html">Billing</a></li>
+<li><a href="invoice.html">Invoices</a></li>
+<li><a href="reports.html">Reports</a></li>
+<li><a href="settings.html">Settings</a></li>
+<li><a href="admin.html">Admin</a></li>
+<li><a href="login.html">Logout</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="settings">
+
+<h1>Account Settings</h1>
+
+<form id="settingsForm">
+
+<label>Full Name</label>
+<input type="text" id="name" placeholder="Enter Full Name">
+
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter Email">
+
+<label>Mobile Number</label>
+<input type="text" id="mobile" placeholder="Enter Mobile Number">
+
+<label>New Password</label>
+<input type="password" id="password" placeholder="Enter New Password">
+
+<label>Notification</label>
+
+<select id="notification">
+<option>Enabled</option>
+<option>Disabled</option>
+</select>
+
+<div class="buttons">
+
+<button type="submit">Save Changes</button>
+
+<button type="reset">Reset</button>
+
+</div>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Subscription Management System</p>
+
+</footer>
+
+<script src="js/settings.js"></script>
+
+</body>
+</html>
