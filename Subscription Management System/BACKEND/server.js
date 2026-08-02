@@ -22,6 +22,12 @@ app.get("/",function(req,res){
 
 });
 
+const userRoutes=require("./routes/userRoutes");
+const planRoutes=require("./routes/planRoutes");
+
+app.use("/users",userRoutes);
+app.use("/plans",planRoutes);
+
 const PORT=process.env.PORT || 5000;
 
 app.listen(PORT,function(){
